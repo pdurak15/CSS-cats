@@ -1,0 +1,556 @@
+<body>
+    <div id="orange-cat">
+        <div id="cat" onclick="happyOrange()">
+            <div class="head" style="background-color: darkorange"></div>
+            <div class="eye1"></div>
+            <div class="eye2"></div>
+            <div id="o-el1" style="background-color: darkorange"></div>
+            <div id="o-el2"></div>
+            <div id="o-el3" style="background-color: darkorange"></div>
+            <div id="o-el4"></div>
+            <div class="pupil1"></div>
+            <div class="pupil2"></div>
+            <div class="ineye"></div>
+            <div class="ineye" style="right:145px; left:0;"></div>
+            <div class="ear1" style="background-color: darkorange"></div>
+            <div class="ear2" style="background-color: darkorange"></div>
+            <div class="ear3"></div>
+            <div class="ear4"></div>
+            <div class="mouth-area">
+                <div class="mouth1">
+                    <div class="mouth2" style="background-color: darkorange"></div>
+                </div>
+                <div class="mouth1" style="right: 100px;">
+                    <div class="mouth2" style="background-color: darkorange"></div>
+                </div>
+                <div class="helper" style="background-color: darkorange"></div>
+                <div class="nose1" style="">
+                    <div class="nose2" style="background-color: darkorange"></div>
+                </div>
+            </div>
+            <div id="o-mouth-new" style="background-color: darkorange"></div>
+        </div>
+        <div id="o-heart">
+            <div class="heart1">
+                <div class="heart2"></div>
+                <div class="heart3"></div>
+            </div>
+            <div class="heart1" style="transform: rotate(-45deg);">
+                <div class="heart2"></div>
+                <div class="heart3"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="brown-cat">
+        <div id="cat" onclick="happyBrown()">
+            <div class="head" style="background-color: saddlebrown"></div>
+            <div class="eye1"></div>
+            <div class="eye2"></div>
+            <div id="el1" style="background-color: saddlebrown"></div>
+            <div id="el2"></div>
+            <div id="el3" style="background-color: saddlebrown"></div>
+            <div id="el4"></div>
+            <div class="pupil1"></div>
+            <div class="pupil2"></div>
+            <div class="ineye"></div>
+            <div class="ineye" style="right:145px; left:0;"></div>
+            <div class="ear1" style="background-color: saddlebrown"></div>
+            <div class="ear2" style="background-color: saddlebrown"></div>
+            <div class="ear3"></div>
+            <div class="ear4"></div>
+            <div class="mouth-area">
+                <div class="mouth1">
+                    <div class="mouth2" style="background-color: saddlebrown"></div>
+                </div>
+                <div class="mouth1" style="right: 100px;">
+                    <div class="mouth2" style="background-color: saddlebrown"></div>
+                </div>
+                <div class="helper" style="background-color: saddlebrown"></div>
+                <div class="nose1" style="">
+                    <div class="nose2" style="background-color: saddlebrown"></div>
+                </div>
+            </div>
+            <div id="mouth-new" style="background-color: saddlebrown"></div>
+        </div>
+        <div id="heart">
+            <div class="heart1">
+                <div class="heart2"></div>
+                <div class="heart3"></div>
+            </div>
+            <div class="heart1" style="transform: rotate(-45deg);">
+                <div class="heart2"></div>
+                <div class="heart3"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<style>
+    body {
+        background: rgb(238,174,202);
+        background: linear-gradient(45deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    }
+
+    #orange-cat {
+        position: absolute;
+        margin: auto;
+        top: 0px;
+        right: 500px;
+        bottom: 0;
+        left: 0;
+    }
+
+    #brown-cat {
+        position: absolute;
+        margin: auto;
+        top: 0px;
+        right: 0px;
+        bottom: 0;
+        left: 500px;
+    }
+
+    .head {
+        position: absolute;
+        margin: auto;
+        background-color: orange;
+        top: 0px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+        z-index: 2;
+    }
+
+    .eyelid {
+        position: absolute;
+        margin: auto;
+        background-color: orange;
+        top: 20px;
+        right: 150px;
+        bottom: 0;
+        left: 0;
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        z-index: 7;
+    }
+
+    .eyelid-left {
+        position: absolute;
+        margin: auto;
+        background-color: orange;
+        top: 20px;
+        right: 0px;
+        bottom: 0px;
+        left: 150px;
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        z-index: 7;
+    }
+
+    .eye-closed {
+        position: absolute;
+        margin: auto;
+        background-color: black;
+        top: 20px;
+        right: 150px;
+        bottom: 10px;
+        left: 0;
+        height: 85px;
+        width: 75px;
+        border-radius: 50%;
+        z-index: 5;
+    }
+
+    .eye-closed-left {
+        position: absolute;
+        margin: auto;
+        background-color: black;
+        top: 20px;
+        right: 0px;
+        bottom: 10px;
+        left: 150px;
+        height: 85px;
+        width: 75px;
+        border-radius: 50%;
+        z-index: 5;
+    }
+
+    .eye1 {
+        position: absolute;
+        margin: auto;
+        background-color: white;
+        top: 0px;
+        right: 150px;
+        bottom: 0;
+        left: 0;
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        z-index: 5;
+    }
+
+    #pet-text {
+        position: relative;
+        color: #b0416d;
+        font-family: sans-serif;
+        font-size: 60px;
+        text-align: center;
+        top: 320px;
+    }
+
+    .eye2 {
+        position: absolute;
+        margin: auto;
+        background-color: white;
+        top: 0px;
+        right: 0px;
+        bottom: 0;
+        left: 150px;
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        z-index: 5;
+    }
+
+    .pupil1 {
+        position: absolute;
+        margin: auto;
+        background-color: black;
+        top: 5px;
+        right: 145px;
+        bottom: 0;
+        left: 0;
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        z-index: 6;
+    }
+
+    .pupil2 {
+        position: absolute;
+        margin: auto;
+        background-color: black;
+        top: 5px;
+        right: 0px;
+        bottom: 0;
+        left: 145px;
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        z-index: 6;
+    }
+
+    h1 {
+        font-family: sans-serif;
+        font-size: 80px;
+        position: absolute;
+        margin: auto;
+        background-color: black;
+        top: 100px;
+        right: 75px;
+        bottom: 0px;
+        left: 0px;
+        height: 0px;
+        width: 0px;
+        z-index: 4;
+    }
+
+    .ear1 {
+        position: absolute;
+        margin: auto;
+        background-color: orange;
+        top: 0px;
+        right: 145px;
+        bottom: 150px;
+        left: 0px;
+        height: 150px;
+        width: 150px;
+        border-radius: 0%;
+        z-index: 0;
+        transform: skewY(15deg);
+    }
+
+    .ear2 {
+        position: absolute;
+        margin: auto;
+        background-color: orange;
+        top: 0px;
+        right: 0px;
+        bottom: 150px;
+        left: 145px;
+        height: 150px;
+        width: 150px;
+        border-radius: 0%;
+        z-index: 0;
+        transform: skewY(-15deg);
+    }
+
+    .ear3 {
+        position: absolute;
+        margin: auto;
+        background-color: pink;
+        top: 0px;
+        right: 100px;
+        bottom: 90px;
+        left: 0px;
+        height: 150px;
+        width: 150px;
+        border-radius: 0%;
+        z-index: 1;
+        transform: skewY(15deg);
+    }
+
+    .ear4 {
+        position: absolute;
+        margin: auto;
+        background-color: pink;
+        top: 0px;
+        right: 0px;
+        bottom: 90px;
+        left: 100px;
+        height: 150px;
+        width: 150px;
+        border-radius: 0%;
+        z-index: 1;
+        transform: skewY(-15deg);
+    }
+
+    .mouth1 {
+        position: absolute;
+        margin: auto;
+        background-color: black;
+        top: 180px;
+        right: 0px;
+        bottom: 0;
+        left: 50px;
+        height: 60px;
+        width: 55px;
+        border-radius: 50%;
+        z-index: 4;
+    }
+
+    .mouth2 {
+        position: absolute;
+        margin: auto;
+        background-color: orange;
+        top: 0px;
+        right: 0px;
+        bottom: 0;
+        left: 0;
+        height: 50px;
+        width: 45px;
+        border-radius: 50%;
+        z-index: 4;
+    }
+
+    .helper {
+        position: absolute;
+        margin: auto;
+        background-color: orange;
+        top: 160px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        height: 40px;
+        width: 120px;
+        border-radius: 0%;
+        z-index: 5;
+    }
+
+    .nose1 {
+        position: absolute;
+        margin: auto;
+        background-color: black;
+        top: 151px;
+        right: 0px;
+        bottom: 0;
+        left: 0;
+        height: 50px;
+        width: 40px;
+        border-radius: 50%;
+        z-index: 5;
+    }
+
+    .nose2 {
+        position: absolute;
+        margin: auto;
+        background-color: orange;
+        top: 0px;
+        right: 0px;
+        bottom: 30px;
+        left: 0px;
+        height: 50px;
+        width: 50px;
+        border-radius: 0%;
+        z-index: 5;
+    }
+
+    #mouth-new {
+        position: absolute;
+        margin: auto;
+        background-color: orange;
+        top: 150px;
+        right: 0px;
+        bottom: 0;
+        left: 0;
+        height: 70px;
+        width: 50px;
+        border-radius: 50%;
+        z-index: 3;
+    }
+
+    #o-mouth-new {
+        position: absolute;
+        margin: auto;
+        background-color: orange;
+        top: 150px;
+        right: 0px;
+        bottom: 0;
+        left: 0;
+        height: 70px;
+        width: 50px;
+        border-radius: 50%;
+        z-index: 3;
+    }
+
+    .mouth-area {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 50px;
+        left: 0px;
+    }
+
+    .heart1 {
+        position: absolute;
+        margin: auto;
+        background-color: red;
+        top: 0px;
+        right: 0px;
+        bottom: 30px;
+        left: 0px;
+        height: 60px;
+        width: 60px;
+        border-radius: 0%;
+        transform: rotate(45deg);
+        z-index: 1;
+    }
+
+    .heart2 {
+        position: absolute;
+        margin: auto;
+        background-color: red;
+        top: 0px;
+        right: 0px;
+        bottom: 63px;
+        left: 0px;
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        transform: rotate(45deg);
+        z-index: 1;
+    }
+
+    #heart {
+        position: absolute;
+        top: 50px;
+        bottom: 0px;
+        right: 0px;
+        left: 0px;
+    }
+
+    #o-heart {
+        position: absolute;
+        top: 50px;
+        bottom: 0px;
+        right: 0px;
+        left: 0px;
+    }
+
+    #cat {
+        position: absolute;
+        top: 200px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+    }
+
+    @keyframes anim-heart {
+        from {
+            transform: scale(0.1);
+            opacity: 0;
+            transform: translateY(0px);
+        }
+
+        to {
+            transform: scale(1.2);
+            transform: translateY(-200px);
+            opacity: 1;
+        }
+    }
+
+    .anim {
+        animation-name: anim-heart;
+        animation-duration: 1s;
+        animation-fill-mode: backwards;
+    }
+</style>
+
+<script>
+    function happyOrange() {
+        var m = document.getElementById("o-mouth-new");
+        var lovely = document.getElementById("o-heart");
+        var i1 = document.getElementById("o-el1");
+        var i2 = document.getElementById("o-el2");
+        var i3 = document.getElementById("o-el3");
+        var i4 = document.getElementById("o-el4");
+        m.style.backgroundColor = "#c94d89";
+        if (!lovely.classList.contains("anim")) {
+            lovely.classList.add("anim");
+        }
+        if (!i1.classList.contains("eyelid")) {
+            i1.classList.add("eyelid");
+        }
+        if (!i2.classList.contains("eye-closed")) {
+            i2.classList.add("eye-closed");
+        }
+        if (!i3.classList.contains("eyelid-left")) {
+            i3.classList.add("eyelid-left");
+        }
+        if (!i4.classList.contains("eye-closed-left")) {
+            i4.classList.add("eye-closed-left");
+        }
+        setTimeout("location.reload()", 1000);
+    };
+
+    function happyBrown() {
+        var m = document.getElementById("mouth-new");
+        var lovely = document.getElementById("heart");
+        var i1 = document.getElementById("el1");
+        var i2 = document.getElementById("el2");
+        var i3 = document.getElementById("el3");
+        var i4 = document.getElementById("el4");
+        m.style.backgroundColor = "#c94d89";
+        if (!lovely.classList.contains("anim")) {
+            lovely.classList.add("anim");
+        }
+        if (!i1.classList.contains("eyelid")) {
+            i1.classList.add("eyelid");
+        }
+        if (!i2.classList.contains("eye-closed")) {
+            i2.classList.add("eye-closed");
+        }
+        if (!i3.classList.contains("eyelid-left")) {
+            i3.classList.add("eyelid-left");
+        }
+        if (!i4.classList.contains("eye-closed-left")) {
+            i4.classList.add("eye-closed-left");
+        }
+        setTimeout("location.reload()", 1000);
+    };
+</script>
