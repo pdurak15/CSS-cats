@@ -1,6 +1,6 @@
 <body>
-	<div>
-		<a href="/siblings.html">See the siblings</a>
+	<div id="link">
+		<a href="./siblings.html">See the siblings</a>
 	</div>
     <div id="cat" onclick="happy()">
         <div class="head"></div>
@@ -54,6 +54,10 @@
         background: rgb(238,174,202);
         background: linear-gradient(45deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
     }
+	#link {
+		position: absolute;
+		z-index: 99;
+	}
     .head {
         position: absolute;
         margin: auto;
