@@ -91,7 +91,6 @@
         background: rgb(238,174,202);
         background: linear-gradient(45deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
     }
-
     #orange-cat {
         position: absolute;
         margin: auto;
@@ -100,7 +99,6 @@
         bottom: 0;
         left: 0;
     }
-
     #brown-cat {
         position: absolute;
         margin: auto;
@@ -109,7 +107,6 @@
         bottom: 0;
         left: 500px;
     }
-
     .head {
         position: absolute;
         margin: auto;
@@ -123,7 +120,6 @@
         border-radius: 50%;
         z-index: 2;
     }
-
     .eyelid {
         position: absolute;
         margin: auto;
@@ -137,7 +133,6 @@
         border-radius: 50%;
         z-index: 7;
     }
-
     .eyelid-left {
         position: absolute;
         margin: auto;
@@ -151,7 +146,6 @@
         border-radius: 50%;
         z-index: 7;
     }
-
     .eye-closed {
         position: absolute;
         margin: auto;
@@ -165,7 +159,6 @@
         border-radius: 50%;
         z-index: 5;
     }
-
     .eye-closed-left {
         position: absolute;
         margin: auto;
@@ -179,7 +172,6 @@
         border-radius: 50%;
         z-index: 5;
     }
-
     .eye1 {
         position: absolute;
         margin: auto;
@@ -193,7 +185,6 @@
         border-radius: 50%;
         z-index: 5;
     }
-
     #pet-text {
         position: relative;
         color: #b0416d;
@@ -202,7 +193,6 @@
         text-align: center;
         top: 320px;
     }
-
     .eye2 {
         position: absolute;
         margin: auto;
@@ -216,7 +206,6 @@
         border-radius: 50%;
         z-index: 5;
     }
-
     .pupil1 {
         position: absolute;
         margin: auto;
@@ -230,7 +219,6 @@
         border-radius: 50%;
         z-index: 6;
     }
-
     .pupil2 {
         position: absolute;
         margin: auto;
@@ -244,7 +232,6 @@
         border-radius: 50%;
         z-index: 6;
     }
-
     h1 {
         font-family: sans-serif;
         font-size: 80px;
@@ -259,7 +246,6 @@
         width: 0px;
         z-index: 4;
     }
-
     .ear1 {
         position: absolute;
         margin: auto;
@@ -274,7 +260,6 @@
         z-index: 0;
         transform: skewY(15deg);
     }
-
     .ear2 {
         position: absolute;
         margin: auto;
@@ -289,7 +274,6 @@
         z-index: 0;
         transform: skewY(-15deg);
     }
-
     .ear3 {
         position: absolute;
         margin: auto;
@@ -304,7 +288,6 @@
         z-index: 1;
         transform: skewY(15deg);
     }
-
     .ear4 {
         position: absolute;
         margin: auto;
@@ -319,7 +302,6 @@
         z-index: 1;
         transform: skewY(-15deg);
     }
-
     .mouth1 {
         position: absolute;
         margin: auto;
@@ -333,7 +315,6 @@
         border-radius: 50%;
         z-index: 4;
     }
-
     .mouth2 {
         position: absolute;
         margin: auto;
@@ -347,7 +328,6 @@
         border-radius: 50%;
         z-index: 4;
     }
-
     .helper {
         position: absolute;
         margin: auto;
@@ -361,7 +341,6 @@
         border-radius: 0%;
         z-index: 5;
     }
-
     .nose1 {
         position: absolute;
         margin: auto;
@@ -375,7 +354,6 @@
         border-radius: 50%;
         z-index: 5;
     }
-
     .nose2 {
         position: absolute;
         margin: auto;
@@ -389,7 +367,6 @@
         border-radius: 0%;
         z-index: 5;
     }
-
     #mouth-new {
         position: absolute;
         margin: auto;
@@ -403,7 +380,6 @@
         border-radius: 50%;
         z-index: 3;
     }
-
     #o-mouth-new {
         position: absolute;
         margin: auto;
@@ -417,7 +393,6 @@
         border-radius: 50%;
         z-index: 3;
     }
-
     .mouth-area {
         position: absolute;
         top: 0px;
@@ -425,7 +400,6 @@
         bottom: 50px;
         left: 0px;
     }
-
     .heart1 {
         position: absolute;
         margin: auto;
@@ -440,7 +414,6 @@
         transform: rotate(45deg);
         z-index: 1;
     }
-
     .heart2 {
         position: absolute;
         margin: auto;
@@ -455,7 +428,6 @@
         transform: rotate(45deg);
         z-index: 1;
     }
-
     #heart {
         position: absolute;
         top: 50px;
@@ -463,7 +435,6 @@
         right: 0px;
         left: 0px;
     }
-
     #o-heart {
         position: absolute;
         top: 50px;
@@ -471,7 +442,6 @@
         right: 0px;
         left: 0px;
     }
-
     #cat {
         position: absolute;
         top: 200px;
@@ -479,21 +449,18 @@
         bottom: 0px;
         left: 0px;
     }
-
     @keyframes anim-heart {
         from {
             transform: scale(0.1);
             opacity: 0;
             transform: translateY(0px);
         }
-
         to {
             transform: scale(1.2);
             transform: translateY(-200px);
             opacity: 1;
         }
     }
-
     .anim {
         animation-name: anim-heart;
         animation-duration: 1s;
@@ -525,9 +492,14 @@
         if (!i4.classList.contains("eye-closed-left")) {
             i4.classList.add("eye-closed-left");
         }
-        setTimeout("location.reload()", 1000);
+        setTimeout(function() {
+			lovely.classList.remove("anim");
+			i1.classList.remove("eyelid");
+			i2.classList.remove("eye-closed");
+			i3.classList.remove("eyelid-left");
+			i4.classList.remove("eye-closed-left");
+		}, 1000);
     };
-
     function happyBrown() {
         var m = document.getElementById("mouth-new");
         var lovely = document.getElementById("heart");
@@ -551,6 +523,12 @@
         if (!i4.classList.contains("eye-closed-left")) {
             i4.classList.add("eye-closed-left");
         }
-        setTimeout("location.reload()", 1000);
+        setTimeout(function() {
+			lovely.classList.remove("anim");
+			i1.classList.remove("eyelid");
+			i2.classList.remove("eye-closed");
+			i3.classList.remove("eyelid-left");
+			i4.classList.remove("eye-closed-left");
+		}, 1000);
     };
 </script>
