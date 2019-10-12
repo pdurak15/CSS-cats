@@ -370,7 +370,6 @@
     #mouth-new {
         position: absolute;
         margin: auto;
-        background-color: orange;
         top: 150px;
         right: 0px;
         bottom: 0;
@@ -383,7 +382,6 @@
     #o-mouth-new {
         position: absolute;
         margin: auto;
-        background-color: orange;
         top: 150px;
         right: 0px;
         bottom: 0;
@@ -498,6 +496,7 @@
 			i2.classList.remove("eye-closed");
 			i3.classList.remove("eyelid-left");
 			i4.classList.remove("eye-closed-left");
+			m.removeAttribute("style");
 		}, 1000);
     };
     function happyBrown() {
@@ -529,7 +528,7 @@
 			i2.classList.remove("eye-closed");
 			i3.classList.remove("eyelid-left");
 			i4.classList.remove("eye-closed-left");
-			m.removeAtribute("style");
+			m.removeAttribute("style");
 		}, 1000);
     };
 </script>
